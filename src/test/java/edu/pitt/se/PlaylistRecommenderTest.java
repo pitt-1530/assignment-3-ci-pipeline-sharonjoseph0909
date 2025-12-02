@@ -15,7 +15,7 @@ public class PlaylistRecommenderTest {
 
     @Test
     public void testClassifyEnergyMedium() {
-        List<Integer> bpms = (110, 120, 130);
+        List<Integer> bpms = List.of(110, 120, 130);
         assertEquals("MEDIUM", PlaylistRecommender.classifyEnergy(bpms));
     }
 
