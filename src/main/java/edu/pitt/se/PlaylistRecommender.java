@@ -16,7 +16,7 @@ public class PlaylistRecommender {
     }
 
     public static boolean isValidTrackTitle(String title) {
-        if (title == null) || return false;
+        if (title == null) return false;
             if (title.length() < 1 || title.length() > 30) return false;
             return title.matches("[A-Za-z]+");
         }
